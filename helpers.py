@@ -65,6 +65,11 @@ def assert_matching_schema(sample_row, table_definition, strict=True):
             table_definition.table_name
         )
 
+def numerical_encode_cause(string):
+    if can_be_int(string):
+        return int(string)
+    else:
+        return int(string,36) + 10000  # To provide nice range checking
 
 def sanitize(string):
     #tmp = string.replace('"', '\\"')

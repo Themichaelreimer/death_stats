@@ -87,7 +87,7 @@ class TableInfo:
             ('id', 'SERIAL', 'PRIMARY KEY'),
             ('country', 'INTEGER', 'NOT NULL'),
             ('year', 'INTEGER', 'NOT NULL'),
-            ('cause', 'VARCHAR(10)', 'NOT NULL'),
+            ('cause', 'INTEGER', 'NOT NULL'),
             ('sex', 'CHAR(1)', 'NOT NULL'),
             ('format', 'INTEGER', 'NOT NULL'),
             ('deaths1', 'INTEGER', 'DEFAULT 0 NOT NULL'),
